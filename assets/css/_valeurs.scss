@@ -51,3 +51,20 @@ $screen-xxl-min: 1800px;
   align-items: $align;
   justify-content: $justify;
 }
+
+// Pour le parcours : 
+@mixin tablet-and-up {
+  @media screen and (min-width: 769px) { @content; }
+}
+
+@mixin mobile-and-up {
+  @media screen and (min-width: 601px) { @content; }
+}
+
+@mixin tablet-and-down  {
+  @media screen and (max-width: 768px) { @content; }
+}
+
+@mixin mobile-only {
+  @media screen and (max-width: 600px) { @content; }
+}
