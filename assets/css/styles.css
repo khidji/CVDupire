@@ -1,0 +1,223 @@
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote::before, blockquote::after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Reset perso */
+a, del, ins {
+  text-decoration: none;
+}
+
+a {
+  color: inherit;
+}
+
+label, button {
+  cursor: pointer;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+input, button {
+  outline: 0;
+}
+
+body {
+  background-color: #E0D8D6;
+}
+
+#accueil {
+  background-color: #F8F0EC;
+  background-image: url(../images/pexels.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 100%;
+  color: #fff;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  padding: 10rem 4rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 4rem;
+}
+
+.title1 {
+  margin: 2.5rem 0;
+  font-weight: bolder;
+  color: #F8F0EC;
+  font-size: 2.5rem;
+  font-family: "Uchen", serif;
+}
+
+.homeP {
+  font-weight: bold;
+  text-align: center;
+  color: #F8F0EC;
+  font-family: "Nanum Gothic", sans-serif;
+  width: 70%;
+  height: 100%;
+  font-size: 1rem;
+  word-spacing: .3rem;
+  letter-spacing: .1rem;
+  line-height: 1.6rem;
+}
+
+.bouton {
+  color: #333231;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 1rem;
+  word-spacing: .3rem;
+  letter-spacing: .1rem;
+  line-height: 1.6rem;
+  background-color: #F8F0EC;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  display: inline-block;
+  margin-bottom: 3rem;
+  -webkit-transition: background-color ease-in-out 0.5s;
+  transition: background-color ease-in-out 0.5s;
+}
+
+.bouton:hover {
+  background-color: #AA7975;
+  color: #F8F0EC;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 576px) {
+  #accueil {
+    background: linear-gradient(135deg, #e5e5dca2 0%, #AA7975 100%), url(../images/fondvertical.jpg) center no-repeat;
+    position: relative;
+    margin-bottom: 10rem;
+  }
+}
+
+.titres {
+  font-family: "Special Elite", cursive;
+  color: #AA7975;
+  margin-left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+#apropos {
+  margin-top: 3rem;
+  padding: 3rem;
+}
+
+.contenuapropos {
+  font-family: "Nanum Gothic", sans-serif;
+  margin: auto;
+  max-width: 1000px;
+}
+
+@media (min-width: 992px) {
+  .contenuapropos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 1rem;
+  }
+}
+
+.contenuapropos img {
+  border: solid 2px #333231;
+  border-radius: 50%;
+  width: 15rem;
+}
+
+.contenuapropos p {
+  margin: 1rem;
+  padding: 5%;
+  font-size: 1.2rem;
+  color: #333231;
+  line-height: 1.6rem;
+}
+
+@media (min-width: 992px) {
+  .contenuapropos p {
+    max-width: 600px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
