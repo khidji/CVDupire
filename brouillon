@@ -1,0 +1,108 @@
+
+// ====================== ACCUEIL ======================
+
+
+#accueil {
+    background-color: $couleur1 ;
+    background-image: url(../images/pexels.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 100%;
+    color: #fff;
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    padding:10rem 4rem;
+    justify-content: center;
+    gap: 4rem;
+}
+
+
+
+
+.homeP{
+    font-weight: bold;
+    text-align: center;
+    color: $couleur1;
+    font-family: $policetexte;
+    width: 70%;
+    height: 100%;
+    font-size: 1rem;
+    word-spacing: .3rem;
+    letter-spacing: .1rem;
+    line-height: 1.6rem; 
+}
+
+
+.bouton{
+    color: $couleur3;
+    font-family: $policetexte;
+    font-size: 1rem;
+    word-spacing: .3rem;
+    letter-spacing: .1rem;
+    line-height: 1.6rem;
+    background-color: $couleur1;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    display: inline-block;
+    margin-bottom: 3rem;
+    transition: background-color ease-in-out 0.5s;
+}
+
+.bouton:hover {
+    background-color: $couleur2;
+    color: $couleur1;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: $screen-sm-min) {
+    
+    #accueil {
+        background: linear-gradient(135deg, $couleur15 0%,
+        $couleur2 100%), url(../images/fondvertical.jpg) center no-repeat ;
+        position: relative;
+        margin-bottom: 10rem;
+    }   
+}
+
+
+
+#apropos {
+    margin-top: 3rem;
+    padding: 3rem;
+}
+
+
+.contenuapropos {
+    font-family: $policetexte;
+    margin: auto;
+    max-width: 1000px;
+  
+    @include lg {
+      @include flex(center, space-between);
+      padding: 1rem;
+    }
+  
+    img {
+      border: solid 2px $couleur3;
+      border-radius: 50%;
+      width: 15rem;
+    }
+  
+    p {
+      margin: 1rem;
+      padding: 5%;
+      font-size: 1.2rem;
+      color: $couleur3;
+      line-height: 1.6rem;
+  
+      @include lg {
+        max-width: 600px;
+      }
+    }
+}
+
+
