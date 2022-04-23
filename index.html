@@ -28,7 +28,8 @@
             <div class="text-box">
                 <h1 class="heading-primary">
                     <span class="heading-primary-main">Parcours de formation</span>
-                    <span class="heading-primary-sub">Lucie Dupire</span>
+                    <span class="heading-primary-sub">Bienvenue sur mon CV en ligne ! Naviguez sur mon site internet ou
+                        ou téléchargez mon CV au format PDF en cliquant sur le bouton ci-dessous.</span>
                 </h1>
                 <a href="assets/liens/CVLucieDupire.pdf" target="blank" class="btn btn-white btn-animated">CV au format PDF</a>
             </div>
@@ -55,23 +56,24 @@
 
             <!-- PARTIE DE GAUCHE DE L'ECRAN-->
             <section id="gauche">
-                <!-- image, adresse, tel, mail-->
                 <img src="assets/images/Lulu.jpg">
-                <h1 class="titres2">Informations personnelles</h1>
-                <p> Lucie Dupire</p>
-                <p> 1 allée des paquerettes</p>
-                <p> 93160 Noisy-le-Grand</p>
-                <p> 06 03 04 03 04</p>
-                <p> dupirelucie@gmail.com</p>
-
-                <h1 class="titres2"> Langues étrangères</h1>
-                <p>Anglais courant</p>
-                <p>Espagnol courant</p>
-
-                <h1 class="titres2">Outils numériques</h1>
-                <p> Langages : HTML CSS(SCSS) PHP javascript #C </p>
-                <p> Logiciels : Pack office, Sirrhius (RH)</p>
-                <p></p>
+                <div class="div-gauche">
+                    <h1 class="titres2">Informations personnelles</h1>
+                    <p> <span>Lucie Dupire</span></p>
+                    <p> 1 allée des paquerettes 93160 Noisy-le-Grand</p>
+                    <p> 06 03 04 03 04</p>
+                    <p> dupirelucie@gmail.com</p>
+                </div>             
+                <div class="div-gauche">
+                    <h1 class="titres2"> Langues étrangères</h1>
+                    <p><span>Anglais</span> courant : certification OLS et Cambridge</p>
+                    <p> <span>Espagnol</span> courant : certification OLS</p>
+                </div>
+                <div class="div-gauche">
+                    <h1 class="titres2">Outils numériques</h1>
+                    <p> <span>Langages:</span> HTML CSS(SCSS) PHP javascript #C </p>
+                    <p> <span>Logiciels bureautique:</span> Pack office, Sirrhius (RH)</p>
+                </div>
             </section>
             
             <!-- PARTIE DE DROITE DE L'ECRAN (MAIN)-->
@@ -81,12 +83,12 @@
                         <div class="container_xp">
                           
                           <article class="episode">
-                            <div class="episode__number">Depuis 2021</div>
+                            <div class="episode__number">2021 - 2023</div>
                             <div class="episode__content">
                               <div class="title">Pôle emploi IDF</div>
                               <div class="story">
-                                  <p>Alternante au relais informatique et libertés</p>                  
-                                  <p></p>            
+                                  <p class="job">Alternante au relais informatique et libertés (RGPD)</p>                  
+                                  <p>Mise en oeuvre de la conformité RGPD de Pôle emploi dans la région Ile de France, suivi des partenariats, réponse aux plaintes des demandeurs d'emploi et des salariés, sensibilisation du personnel, rédaction de contrats numériques</p>            
                                 </div>
                             </div>
                           </article>
@@ -96,18 +98,19 @@
                             <div class="episode__content">
                               <div class="title"> Instant RapFR </div>
                               <div class="story">
-                                  <p>Community Manager</p> 
-                                  <p>Création de contenu sur la page Twitter du média d'information musical Instant RapFR</p>
-                                  <p>Gestion des messages privés, des partenariats avec les rappeurs</p>                             
+                                  <p class="job">Community Manager</p> 
+                                  <p>Création de contenu sur la page Twitter du média d'information musical Instant RapFR : gestion des messages privés, création de partenariats avec des rappeurs et médias sportifs, montage vidéo, suivi de projet type concours, gestion d'équipe</p>                             
                                 </div>
                             </div>
                           </article>                                                 
                           <article class="episode">
-                            <div class="episode__number">2020 - 2019 et 2018</div>
+                            <div class="episode__number">2019 - 2020</div>
                             <div class="episode__content">
                               <div class="title">Ecole nationale des finances publiques</div>
                               <div class="story">
-                                  <p>Assistante ressources humaines</p>                              
+                                  <p class="job">Assistante ressources humaines (3 CDD de deux mois)</p>
+                                  <p>Suivi des recrutements, préparation des variables de paie, rédaction de divers documents
+                                    administratifs, assistanat général du siège</p>                              
                                 </div>
                             </div>
                           </article>  
@@ -116,7 +119,10 @@
                             <div class="episode__content">
                               <div class="title">Université Paris Est Créteil</div>
                               <div class="story">
-                                  <p>Etudiant référent en orientation</p>                              
+                                  <p class="job">Etudiant référent en orientation</p>
+                                  <p>Réponse aux questions des étudiants, des parents et des adultes en reprise d’études sur les
+                                    différentes formations de l’Université ; organisation d’évènements (salons d’orientation, forum
+                                    d’emploi)</p>                              
                                 </div>
                             </div>
                           </article>     
@@ -125,7 +131,8 @@
                             <div class="episode__content">
                               <div class="title">Employeur privé</div>
                               <div class="story">
-                                  <p>Babysitter</p>                              
+                                  <p class="job">Babysitter</p>   
+                                  <p>Garde d'enfants, surveillance et aide aux devoirs</p>                           
                                 </div>
                             </div>
                           </article>                           
@@ -166,9 +173,44 @@
 
                 <section id="divers">
                     <h1 class="titres">Divers</h1>
-                    <h2>Projets de développement web</h2>
-
-                    <h2>Projets universitaires</h2>
+                    <div class="contenu_divers">
+                        <div class="proj proj_num">
+                            <h2>Projets de développement web</h2>
+                            <ul class="projets">
+                                <li>
+                                    <h3>Site de petites annonces</h3>
+                                    <p>
+                                        Projet de fin de formation développement web. Développé en PHP, gestion de base de données (MySQL)
+                                    </p>
+                                    <a href="http://ongalere.com">cliquez ici</a>
+                                </li>
+                                <li>
+                                    <h3>Site de restaurant</h3>
+                                    <p>Projet de groupe. Utilisation de Twig</p>
+                                    <a href="https://ristorante.david-nogueira.dev/">cliquez ici</a>
+                                </li>
+                                <li>
+                                    <h3>Portfolio</h3>
+                                    <p>HTML5, CSS, SCSS, Javascript, PHP, MySQL et twig</p>
+                                    <a href="http://luciedupire.fr">cliquez ici</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="proj proj_univ">
+                            <h2>Projets universitaires</h2>
+                            <ul class="projets">
+                                <li>
+                                    <h3>Erasmus</h3>
+                                    <p>Semestre à l'université Complutense de Madrid</p>
+                                    <a href="https://www.ucm.es/">cliquez ici</a>
+                                </li>
+                                <li>    
+                                    <h3>Mémoire de recherche</h3>
+                                    <p>Sujet encore à définir</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </section>
             </section>
 
@@ -190,7 +232,7 @@
                     </div>
                     
                     <div class="footer-image">
-                        <a href="https://twitter.com/Instant_RapFr?s=20" target="_blank">
+                        <a href="mailto:dupirelucie@gmail.com" target="_blank">
                             <i class="fas fa-envelope"></i>                        
                         </a>
                     </div>
@@ -200,162 +242,3 @@
     </body>
 </html>
 
-
-<!-- 
-
-
-
-
-    <body>
-        <header id="menu">
-            <div class="logosite">
-                <img src='assets/images/logo.png' alt="logo">
-            </div>
-            <nav>
-                <div class="burger close">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <ul class="menu-liste">
-                    <li><a href="index.php">Accueil</a></li>
-                    <li><a href="realisations.php">Réalisations</a></li>
-                    <li><a href="competences.php">Compétences</a></li>
-                    <li><a href="contact.php">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main>
-
-            <section id="accueil">
-                <h1 class='title1'>
-                    Etudiante en master droit du numérique (informatique et droit)
-                </h1>
-                <p class='homeP'>
-                    Je suis Lucie Dupire étudiante en droit du numérique. Je suis en alternance à Pôle emploi sur la conformité de la région Ile de France au RGPD.
-                    Bienvenue sur mon CV en ligne ! Naviguez sur mon site internet ou,
-                    si vous le souhaitez, vous pouvez télécharger
-                    mon CV au format PDF en cliquant sur le bouton ci-dessous.
-                </p>
-                <div>
-                    <a class="bouton" href="assets/liens/CVLucieDupire.pdf" target="_blank">CV format PDF</a>
-                </div>
-            </section>
-
-            <section id="apropos">
-                    <h1 class="titres">
-                        A propos
-                    </h1>     
-                <div class="contenuapropos">
-                    <div class="image">
-                        <img src="assets/images/Lulu.jpg" alt="photo">
-                    </div>
-                    <p>
-                        J'ai obtenu une licence de droit en 2020. Après cela je me suis intéressée au développement web.
-                        J'ai rejoins l'école Philiance dans laquelle j'ai effectué une formation certifiante de développeur web. Aujourd'hui, je souhaite
-                        combiner mon attrait pour le droit et pour l'informatique. C'est pour cette raison que je m'oriente vers une carrière 
-                        juridique en droit des nouvelles technologies. Au delà des compétences techniques, je cherche à améliorer mes connaissances 
-                        en droit de l'informatique. Parallèlement à mes études, je suis community manager 
-                        bénévole pour la page d'un média d'actualité musicale sur Twitter.  
-                    </p>
-                </div>
-            </section>
-
-
-            <main>   
-                <h1 class="titres"> Compétences                    </h1>     
-                <div class="container">
-                    <div class="box">
-                        <img src="assets/images/law.jpg">
-                        <div class="contenu_competences">
-                            <p> Culture générale politique, économique et juridique internationale, européenne et française; maîtrise des outils informatiques; aptitude au raisonnement; connaissances juridiques fondamentales; maîtrise du discours juridique écrit et oral.</p>
-                            <a class="ensavoirplus" href="https://www.u-pec.fr/fr/formation/niveau-l/licence-droit-parcours-juriste-international" target="_blank">En savoir plus</a>
-                        </div>
-                        <span class="titre_competences">Juridique</span>
-                    </div>
-                    <div class="box">
-                        <img src="assets/images/coding.jpg">
-                        <div class="contenu_competences">
-                            <p> Développement Front-end et Back-end, gestion de projet et référencement Web. Maîtrise de l'utilisation des logiciels de production et d'intégration multimédia. Développement et sécurité d'un site Web dynamique. Création et exploitation d'une base de données en ligne.</p>
-                            <a class="ensavoirplus" href="http://www.philiance.com/catalogue/catalogue.php?formation=%27informatique-d%C3%A9veloppement%27" target="_blank">En savoir plus</a>
-                        </div>
-                        <span class="titre_competences">Développement</span>
-                    </div>
-                    <div class="box">
-                        <img src="assets/images/social.jpg">
-                        <div class="contenu_competences">
-                            <p>Je gère la page Twitter du média Instant_Rapfr. Mes missions consistent en l'animation de la page, une veille d'actualité, trouver des stratégies pour obtenir de meilleures impressions.</p>
-                            <a class="ensavoirplus" href="CommunityM.php">En savoir plus</a>
-                        </div>
-                        <span class="titre_competences">Community manager</span>
-                    </div>
-                    <div class="box">
-                        <img src="assets/images/langues.jpg">
-                        <div class="contenu_competences">
-                            <p>Je parle anglais et espagnol. J'ai un niveau courant dans les deux langues. Je suis capable de tenir une conversation et j'ai le vocabulaire juridique dans les deux langues. J'ai effectué un séjour de 6 mois en Espagne où j'ai suivi des cours en espagnol et en anglais.</p>
-                        </div>
-                        <span class="titre_competences">Langues étrangères</span>
-                    </div>
-                </div>
--->
-                <!-- ================================= FORMATIONS/PARCOURS ===================================== 
-
-                <section id="parcours">
-                    <h1 class="titres"> Parcours </h1>     
-
-                    <div class="container_parcours">
-                        <div class="wrapper">
-                          <ul class="sessions">
-                            <li>
-                              <div class="time">Depuis octobre 2021</div>
-                              <p>Relais informatique et libertés (conformité RGPD) - Pôle emploi IDF - contrat d'alternance</p>
-                            </li>
-                            <li>
-                                <div class="time">2021-2023</div>
-                                <p>Master droit du numérique - parcours informatique et droit</p>
-                              </li>
-                            <li>
-                              <div class="time">2020-2021</div>
-                              <p>Formation de développeur web - école Philiance</p>
-                            </li>
-                            <li>
-                              <div class="time">2016-2020</div>
-                              <p>Licence de droit - parcours juriste international</p>
-                            </li>
-                            <li>
-                              <div class="time">2018</div>
-                              <p>Séjour Erasmus</p>
-                            </li>
-                            <li>
-                              <div class="time">3:30 PM</div>
-                              <p>Drink the magical chai, it will ward off sleep they said. 🤷‍</p>
-                            </li>
-                            <li>
-                              <div class="time">4:30 PM </div>
-                              <p>The only time I don't feel sleepy cause it's work out time. I mean walking time. 😹</p>
-                            </li>
-                            <li>
-                              <div class="time">07:00 PM </div>
-                              <p>Food my tummy needs, sleep my body needs.👿</p>
-                            </li>
-                            <li>
-                              <div class="time">07:30 PM </div>
-                              <p>My tummy's happy time 🍝</p>
-                            </li>
-                            <li>
-                              <div class="time">10:00 PM </div>
-                              <p>uh oh!!! fuel low, get some snacks but wait should I just take a quick nap?🤓 </p>
-                            </li>
-                            <li>
-                              <div class="time">2:30 PM </div>
-                              <p>All hail! The time to sleep has finally arrived.😴😴😴😴😴 </p>
-                            </li>
-                          </ul>
-                        </div>
-                      </div> 
-
-                </section>
-                ================================= FOOTER ===================================== -->
-
-        </main>

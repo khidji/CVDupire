@@ -1,10 +1,3 @@
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 .container_xp {
   width: 95%;
   max-width: 1220px;
@@ -13,6 +6,10 @@
 
 .container_xp p {
   margin: 0 0 13px 0;
+}
+
+.job {
+  font-weight: bolder;
 }
 
 .episode {
