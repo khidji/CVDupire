@@ -18,7 +18,6 @@ $police1: ('Poppins', sans-serif);
 $police2: ('Lato', sans-serif);
 
 // Small tablets and large smartphones (landscape view)
-// J'AI UTILISE 516/517px vu la taille du background de l'accueil
 $screen-sm-min: 576px;
 
 // Small tablets (portrait view)
@@ -53,19 +52,3 @@ $screen-xxl-min: 1800px;
   justify-content: $justify;
 }
 
-// Pour le parcours : 
-@mixin tablet-and-up {
-  @media screen and (min-width: 769px) { @content; }
-}
-
-@mixin mobile-and-up {
-  @media screen and (min-width: 601px) { @content; }
-}
-
-@mixin tablet-and-down  {
-  @media screen and (max-width: 768px) { @content; }
-}
-
-@mixin mobile-only {
-  @media screen and (max-width: 600px) { @content; }
-}

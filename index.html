@@ -20,15 +20,14 @@
     </head>
 
     <body>
-        <header class="header">
+        <header id="header">
             <div class="logosite">
                 <img src='assets/images/logo.png' alt="logo">
             </div>
-            
-            <div class="text-box">
-                <h1 class="heading-primary">
-                    <span class="heading-primary-main">Parcours de formation</span>
-                    <span class="heading-primary-sub">Bienvenue sur mon CV en ligne ! Naviguez sur mon site internet ou
+            <div class="text_header">
+                <h1 class="titre_principal">
+                    <span class="titre_principal_main">Parcours de formation</span>
+                    <span class="titre_principal_sub">Bienvenue sur mon CV en ligne ! Naviguez sur mon site internet ou
                         ou téléchargez mon CV au format PDF en cliquant sur le bouton ci-dessous.</span>
                 </h1>
                 <a href="assets/liens/CVLucieDupire.pdf" target="blank" class="btn btn-white btn-animated">CV au format PDF</a>
@@ -44,7 +43,7 @@
                     <div></div>
                 </div>
                 <ul class="menu-liste">
-                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="#header">Accueil</a></li>
                     <li><a href="#experiences">Expériences</a></li>
                     <li><a href="#diplomes">Diplômes</a></li>
                     <li><a href="#divers">Divers</a></li>
@@ -71,8 +70,10 @@
                 </div>
                 <div class="div-gauche">
                     <h1 class="titres2">Outils numériques</h1>
-                    <p> <span>Langages:</span> HTML CSS(SCSS) PHP javascript #C </p>
-                    <p> <span>Logiciels bureautique:</span> Pack office, Sirrhius (RH)</p>
+                    <p> <span>Programmation et développement web : </span> 
+                        HTML5 (et bootstrap), CSS(SCSS), Javascript, PHP (twig), MySQL, bases en #C, maîtrise de Wordpress, référencement et SEO </p>
+                    <p><span>Gestion de projets et modélisation : </span>méthode agile, rédaction d'un cahier des charges, modélisation d'une base de données (UML)</p>
+                    <p> <span>Logiciels bureautique :</span> Pack office, Sirrhius (RH)</p>
                 </div>
             </section>
             
@@ -81,10 +82,9 @@
                 <section id="experiences">
                     <h1 class="titres"> Expériences professionnelles </h1>    
                         <div class="container_xp">
-                          
-                          <article class="episode">
-                            <div class="episode__number">2021 - 2023</div>
-                            <div class="episode__content">
+                          <article class="experience">
+                            <div class="experience__number">2021 - 2023</div>
+                            <div class="experience__content">
                               <div class="title">Pôle emploi IDF</div>
                               <div class="story">
                                   <p class="job">Alternante au relais informatique et libertés (RGPD)</p>                  
@@ -93,9 +93,9 @@
                             </div>
                           </article>
                           
-                          <article class="episode">
-                            <div class="episode__number">2019-2021</div>
-                            <div class="episode__content">
+                          <article class="experience">
+                            <div class="experience__number">2019-2021</div>
+                            <div class="experience__content">
                               <div class="title"> Instant RapFR </div>
                               <div class="story">
                                   <p class="job">Community Manager</p> 
@@ -103,9 +103,9 @@
                                 </div>
                             </div>
                           </article>                                                 
-                          <article class="episode">
-                            <div class="episode__number">2019 - 2020</div>
-                            <div class="episode__content">
+                          <article class="experience">
+                            <div class="experience__number">2019 - 2020</div>
+                            <div class="experience__content">
                               <div class="title">Ecole nationale des finances publiques</div>
                               <div class="story">
                                   <p class="job">Assistante ressources humaines (3 CDD de deux mois)</p>
@@ -114,9 +114,9 @@
                                 </div>
                             </div>
                           </article>  
-                          <article class="episode">
-                            <div class="episode__number">2017-2020</div>
-                            <div class="episode__content">
+                          <article class="experience">
+                            <div class="experience__number">2017-2020</div>
+                            <div class="experience__content">
                               <div class="title">Université Paris Est Créteil</div>
                               <div class="story">
                                   <p class="job">Etudiant référent en orientation</p>
@@ -126,9 +126,9 @@
                                 </div>
                             </div>
                           </article>     
-                          <article class="episode">
-                            <div class="episode__number">2015-2021</div>
-                            <div class="episode__content">
+                          <article class="experience">
+                            <div class="experience__number">2015-2021</div>
+                            <div class="experience__content">
                               <div class="title">Employeur privé</div>
                               <div class="story">
                                   <p class="job">Babysitter</p>   
@@ -142,12 +142,11 @@
                 <section id="diplomes">
                     <h1 class="titres"> Diplômes</h1>     
                     <div class="container">
-                        <!-- BUG de CSS revoir !!-->
                         <div class="box">
                             <img src="assets/images/social.jpg">
                             <div class="contenu_competences">
-                                <p>Je gère la page Twitter du média Instant_Rapfr. Mes missions consistent en l'animation de la page, une veille d'actualité, trouver des stratégies pour obtenir de meilleures impressions.</p>
-                                <a class="ensavoirplus" href="CommunityM.php">En savoir plus</a>
+                                <p>Le diplôme forme des juristes spécialisés en droit du numérique ayant acquis suffisamment de technicité dans les sciences du numérique pour pouvoir dialoguer efficacement avec les spécialistes de cette dernière discipline (programmeurs, administrateurs de bases de données, administrateurs réseau et autres informaticiens) afin de pouvoir établir, par exemple, des contrats, d’une part, et de défendre ou s’opposer à des contrats existants, d’autre part. Il permet également de participer à la mise en œuvre, y compris d’un point de vue technique, des moyens de protection des données à caractère personnel.</p>
+                                <a class="ensavoirplus" href="https://masterinfodroit.lacl.fr/" target="_blank">En savoir plus</a>
                             </div>
                             <span class="titre_competences">Master droit du numérique</span>
                         </div>
@@ -163,7 +162,7 @@
                             <img src="assets/images/coding.jpg">
                             <div class="contenu_competences">
                                 <p> Développement Front-end et Back-end, gestion de projet et référencement Web. Maîtrise de l'utilisation des logiciels de production et d'intégration multimédia. Développement et sécurité d'un site Web dynamique. Création et exploitation d'une base de données en ligne.</p>
-                                <a class="ensavoirplus" href="http://www.philiance.com/catalogue/catalogue.php?formation=%27informatique-d%C3%A9veloppement%27" target="_blank">En savoir plus</a>
+                                <a class="ensavoirplus" href="https://www.philiance.com/" target="_blank">En savoir plus</a>
                             </div>
                             <span class="titre_competences">Formation en développement web</span>
                         </div>
@@ -186,12 +185,12 @@
                                 </li>
                                 <li>
                                     <h3>Site de restaurant</h3>
-                                    <p>Projet de groupe. Utilisation de Twig</p>
+                                    <p>Projet de groupe. Utilisation de Twig, création de compte client et fonctionnalités réservées, panier et écran de paiement</p>
                                     <a href="https://ristorante.david-nogueira.dev/" target="blank">cliquez ici</a>
                                 </li>
                                 <li>
                                     <h3>Portfolio</h3>
-                                    <p>HTML5, CSS, SCSS, Javascript, PHP, MySQL et twig</p>
+                                    <p>HTML5, CSS, SCSS, Javascript, PHP</p>
                                     <a href="http://luciedupire.fr" target="blank">cliquez ici</a>
                                 </li>
                             </ul>

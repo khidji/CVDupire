@@ -1,3 +1,5 @@
+@import './valeurs';
+
 .container_xp {
 	p {
 		margin: 0 0 13px 0;
@@ -12,21 +14,21 @@
 	font-weight: bolder;
 }
 
-.episode {
+.experience {
   display: grid;
   grid-template-columns: 1fr 3fr;
   position: relative;
 }
 
-.episode__number {
+.experience__number {
 	color: $couleur1;	
-  font-size: 3vw;
+  font-size: 2vw;
   font-weight: 300;
   padding: 10px 0;
   text-align: center;
 }
 
-.episode__content {
+.experience__content {
   border-top: 2px solid $couleur1;
   display: grid;
   grid-template-columns: 1fr 4fr;
@@ -34,22 +36,17 @@
   padding: 15px 0;
 }
 
-.episode__content .title {
+.experience__content .title {
   font-weight: 600
 }
 
-.episode__content .story {
+.experience__content .story {
   line-height: 26px;
 }
 
-@media (max-width: 600px) {
-  .episode__content {
+@media (max-width: $screen-sm-min) {
+  .experience__content {
     grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 576px) {
-  .episode__content .story {
     font-size: 15px;
   }
 }

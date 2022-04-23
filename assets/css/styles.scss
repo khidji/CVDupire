@@ -10,17 +10,13 @@
 
 body {
     background-color: $couleur4;
+    font-family: $policetexte;
 }
 
 main {
   display: flex;
   justify-content: space-between;
 }
-
-#gauche {
-  background-color: $couleur1;
-}
-
 
 .titres {
   font-family: $policetitre;
@@ -29,6 +25,7 @@ main {
   transform: translate(-50%); 
   font-size: 2.5rem;
   text-align: center;
+  text-transform: uppercase;
 }
 
 
@@ -37,7 +34,7 @@ main {
 // =======================================================================
 
 
-.header {
+#header {
   height: 100vh;
   background-image: 
   linear-gradient(to right bottom, 
@@ -48,7 +45,11 @@ main {
   // POUR FAIRE UNE BANNIERE EN TRIANGLE : clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
-.text-box {
+.logosite {
+  padding: 2rem;
+}
+
+.text_header {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -56,35 +57,32 @@ main {
   text-align: center;
 }
 
-.heading-primary {
+.titre_principal {
   color: $couleur3;
   text-transform: uppercase;
-
-  backface-visibility: hidden;
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
 }
 
-.heading-primary-main {
+.titre_principal_main {
   display: block;
-  font-size: 26px;
+  font-size: 2rem;
   font-weight: 400;
   letter-spacing: 5px;
   padding-bottom: 2rem;
 }
 
-.heading-primary-sub {
+.titre_principal_sub {
   margin: 1rem;
+  letter-spacing: 2px;
 }
 
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
-  text-decoration: none;
   padding: 10px 20px;
   display: inline-block;
   border-radius: 100px;
   transition: all .2s;
-  position: relative;
 }
 
 .btn:hover {
@@ -98,9 +96,9 @@ main {
 }
 
 .btn-white {
-  background-color: #fff;
-  color: #777;
-font-size: 14px;
+  background-color: $white;
+  color: $couleur3;
+  font-size: 14px;
 }
 
 
@@ -108,9 +106,14 @@ font-size: 14px;
 // ===================   MENU BANDEAU ET HAMBURGER MENU  =============================
 // ===================================================================================
 
+//pour javascript
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
 
 #menu {
-  position: sticky;
   font-family: $police1;
   background-color: $couleur1;
   padding: 1rem;
@@ -244,7 +247,8 @@ font-size: 14px;
 // =======================================================================
 
 #gauche {
-  max-width: 20%;
+  background-color: $couleur1;  
+  max-width: 18%;
   padding: .5rem;
 
   img {  
@@ -259,6 +263,8 @@ font-size: 14px;
 
   p {
     padding: .5rem;
+    max-width: 90%;
+    line-height: 1.5rem;
   }
 }
 
@@ -276,6 +282,12 @@ font-size: 14px;
   text-align: center;  
 }
  
+@media (max-width: $screen-sm-min) {
+  #gauche {
+    width: 25%;
+  }
+}
+
 // =======================================================================
 // ===================== E X P E R I E N C E =============================
 // =======================================================================
@@ -285,7 +297,7 @@ font-size: 14px;
   margin-top: 2rem;
 }
 
-@import 'experiences.scss' ; 
+@import './experiences' ; 
 
 // =======================================================================
 // ================================== DIPLOMES ========================
@@ -341,14 +353,16 @@ font-size: 14px;
 
 .box:hover > .contenu_competences {
       display: block;
-      margin-top: -50vh;
+      margin-top: -50%;
       padding: 1rem;
 
       p {
+        padding: 2rem;
         font-family: $policetexte;
         color: $couleur1;
         font-weight: bolder;
         text-shadow: 1px 1px 2px black;
+        line-height: normal;
       }
 
       a {
