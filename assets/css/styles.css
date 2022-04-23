@@ -616,6 +616,7 @@ main {
 
 #experiences {
   padding: 2rem;
+  margin-top: 2rem;
 }
 
 .container_xp {
@@ -778,7 +779,7 @@ main {
 }
 
 .contenu_divers {
-  margin: 0 2%;
+  margin: 2rem 2%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -806,7 +807,7 @@ main {
 }
 
 .projets a {
-  color: #F8F0EC;
+  color: #AA7975;
 }
 
 .projets a:hover {
