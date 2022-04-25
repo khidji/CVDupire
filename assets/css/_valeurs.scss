@@ -1,5 +1,4 @@
 //COULEURS
-
 $couleur15: hsla(60, 15%, 88%, 0.635); //backgroundgradient
 $couleur1: #F8F0EC; //backgroundheader
 $couleur2: #AA7975; //contact
@@ -9,14 +8,13 @@ $black: #34435E;
 $white: #ffffff;
 
 // POLICES
-
 $policetitre: ('Special Elite', cursive);
 $policetexte: ('Nanum Gothic', sans-serif);
 $policetitre1: ('Uchen', serif);
-
 $police1: ('Poppins', sans-serif);
 $police2: ('Lato', sans-serif);
 
+// DIFFERENTES TAILLES D'ECRAN
 // Small tablets and large smartphones (landscape view)
 $screen-sm-min: 576px;
 
@@ -32,7 +30,7 @@ $screen-xl-min: 1200px;
 // 2K and higher screens
 $screen-xxl-min: 1800px;
 
-// Medium devices
+// Medium devices, je n'ai pas tout utilisé mais ça peut me servir pour améliorer le site et le côté responsive
 @mixin md {
   @media (min-width: #{$screen-md-min}) {
     @content;

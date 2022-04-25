@@ -1,4 +1,6 @@
-
+// J'utilise SCSS pour pouvoir utiliser des valeurs prédéfinies et l'indentation
+// J'utilise un reset pour que l'affichage de mon site soit le même sur tous les 
+// navigateur utilisé. Permet d'enlever tous les styles prédéfinis
 @import './reset';
 @import './valeurs';
 @import './keyframes';
@@ -13,11 +15,15 @@ body {
     font-family: $policetexte;
 }
 
-main {
-  display: flex;
-  justify-content: space-between;
+// Pour faire en sorte que la partie droite et gauche soient côte à côte sur écran d'ordinateur
+@include md {
+  main {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
+//style des titres
 .titres {
   font-family: $policetitre;
   color: $couleur2; 
@@ -26,6 +32,7 @@ main {
   font-size: 2.5rem;
   text-align: center;
   text-transform: uppercase;
+  max-width: 100%;
 }
 
 
@@ -36,20 +43,32 @@ main {
 
 #header {
   height: 100vh;
-  background-image: 
-  linear-gradient(to right bottom, 
-  $couleur15,   
-  rgba(255, 255, 255, 0.8)),
-   url('../images/pexels.jpg');
-   background-size: cover;
+  // image de fond d'écran avec un dégradé de couleurs par dessus
+  background-image: linear-gradient(to right bottom, $couleur15, rgba(255, 255, 255, 0.8)), url('../images/pexels.jpg');
+  // l'image d'arrière plan couvre entièrement le header
+  background-size: cover;
   // POUR FAIRE UNE BANNIERE EN TRIANGLE : clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
 .logosite {
-  padding: 2rem;
+  padding: .5rem;
+  img {
+    width: 35%;
+  }
+  
+}
+
+@include md {
+  .logosite {
+    padding: 2rem;
+    img {
+      width: auto;
+    }
+  }
 }
 
 .text_header {
+  // centrer le texte au milieu de la page
   position: absolute;
   top: 50%;
   left: 50%;
@@ -76,6 +95,7 @@ main {
   letter-spacing: 2px;
 }
 
+// changer le style quand le lien a déjà été cliqué/visité
 .btn:link,
 .btn:visited {
   text-transform: uppercase;
@@ -85,16 +105,19 @@ main {
   transition: all .2s;
 }
 
+// changement de style quand on passe la souris sur le bouton
 .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+// quand on clique sur le bouton
 .btn:active {
   transform: translateY(-1px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
+// style du bouton
 .btn-white {
   background-color: $white;
   color: $couleur3;
@@ -106,13 +129,15 @@ main {
 // ===================   MENU BANDEAU ET HAMBURGER MENU  =============================
 // ===================================================================================
 
-//pour javascript
+//pour javascript : la classe s'applique quand on scroll
 .sticky {
   position: fixed;
   top: 0;
   width: 100%
 }
 
+
+// style du menu
 #menu {
   font-family: $police1;
   background-color: $couleur1;
@@ -143,6 +168,7 @@ main {
     }
   }
 
+  // mise en page de la liste sur les plus grands écrans et utilisation d'une formule de la page valeurs (flex)
   ul {
     @include flex(center, center, column nowrap);
     gap: 3rem;
@@ -153,8 +179,10 @@ main {
   }
 }
 
+// mise en page de la liste quand elle est cachée et visible
 .menu-liste {
   display: flex;
+  // on la "cache" quand le menu est fermé
   opacity: 0;
   position: absolute;
   left: 0;
@@ -164,6 +192,7 @@ main {
   padding: 1rem;
   transform: translate(100%);
 
+  // au clique on lui applique la classe .visible qui fait apparaitre la liste en haut de l'écran
   &.visible {
     opacity: 1;
     transform: translate(0);
@@ -186,6 +215,7 @@ main {
   color: $couleur2;
 }
 
+// mise en page du burger menu (trois barres)
 .burger {
   @include flex(center, space-between, column nowrap);
   height: 2rem;
@@ -199,6 +229,7 @@ main {
 
   // ----------------------- ANIMATION BOUTON BURGER -------------------
 
+  // Les batons se transforment en croix en moins d'une seconde mais tranquillement
   div {
     border-radius: 50px;
     height: 14%;
@@ -224,7 +255,7 @@ main {
   }
 
   &.open {
-    // transform: rotate(360deg);
+    // transform: rotate(360deg); sert à rien ici
     div {
       &:nth-child(1) {
         animation: k1 1s forwards ease-in-out;
@@ -248,13 +279,10 @@ main {
 
 #gauche {
   background-color: $couleur1;  
-  max-width: 18%;
-  padding: .5rem;
 
   img {  
     width: 90%;
     border-radius: 50%;
-
   }
 
   span {
@@ -263,7 +291,6 @@ main {
 
   p {
     padding: .5rem;
-    max-width: 90%;
     line-height: 1.5rem;
   }
 }
@@ -281,12 +308,15 @@ main {
   font-size: 1.5rem;
   text-align: center;  
 }
- 
-@media (max-width: $screen-sm-min) {
+
+// taille de la div sur les plus grands écrans 
+@include md {
   #gauche {
-    width: 25%;
-  }
+      width: 20rem ;
+      max-width: 500px;
+    }
 }
+
 
 // =======================================================================
 // ===================== E X P E R I E N C E =============================
@@ -297,6 +327,7 @@ main {
   margin-top: 2rem;
 }
 
+// import d'une autre page scss
 @import './experiences' ; 
 
 // =======================================================================
@@ -314,15 +345,18 @@ main {
     
   .box {
     flex: 1;
+    // pour enlever la barre de scroll
     overflow: hidden;
     transition: .5s;
     margin: 0 2%;
     box-shadow: 0 20px 30px rgba(0,0,0,.1);
+    // pour que la taille de la ligne de texte soit 0
     line-height: 0;
   }
   
   .box > img {
     width: 200%;
+    // on fait un calcul pour déterminer la hauteur, permet de s'adapter à tous les écrans
     height: calc(100% - 10vh);
     object-fit: cover; 
     transition: .5s;
@@ -336,6 +370,7 @@ main {
     line-height: 2.6;
   }
   
+  // la box grossie quand on passe la souris
   .box:hover { flex: 1 1 50%; }
   .box:hover > img {
     width: 100%;
@@ -351,9 +386,15 @@ main {
     display: none;
 }
 
+// Pour déplacer le texte quand on passe la souris sur la box qui contient l'image, et le texte à l'intérieur
+
+@include md {
+  .box:hover > .contenu_competences {
+    margin-top: -50%;
+  }
+}
 .box:hover > .contenu_competences {
       display: block;
-      margin-top: -50%;
       padding: 1rem;
 
       p {
@@ -374,6 +415,7 @@ main {
 
 }
 
+// le titre grossi et change de style
 .box:hover > .titre_competences {
   font-size: 5vh;
   text-shadow: 1px 1px 2px black;
@@ -402,6 +444,7 @@ main {
 .contenu_divers {
   margin: 2rem 2%;
   display: flex;
+  // pour mettre un espace automatique entre les éléments
   justify-content: space-around;
   box-shadow: 0 20px 30px rgba(0,0,0,.1);
   border: solid 1px $couleur15

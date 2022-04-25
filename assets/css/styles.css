@@ -321,13 +321,15 @@ body {
   font-family: "Nanum Gothic", sans-serif;
 }
 
-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@media (min-width: 768px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .titres {
@@ -339,6 +341,7 @@ main {
   font-size: 2.5rem;
   text-align: center;
   text-transform: uppercase;
+  max-width: 100%;
 }
 
 #header {
@@ -349,7 +352,20 @@ main {
 }
 
 .logosite {
-  padding: 2rem;
+  padding: .5rem;
+}
+
+.logosite img {
+  width: 35%;
+}
+
+@media (min-width: 768px) {
+  .logosite {
+    padding: 2rem;
+  }
+  .logosite img {
+    width: auto;
+  }
 }
 
 .text_header {
@@ -587,8 +603,6 @@ main {
 
 #gauche {
   background-color: #F8F0EC;
-  max-width: 18%;
-  padding: .5rem;
 }
 
 #gauche img {
@@ -602,7 +616,6 @@ main {
 
 #gauche p {
   padding: .5rem;
-  max-width: 90%;
   line-height: 1.5rem;
 }
 
@@ -620,9 +633,10 @@ main {
   text-align: center;
 }
 
-@media (max-width: 576px) {
+@media (min-width: 768px) {
   #gauche {
-    width: 25%;
+    width: 20rem;
+    max-width: 500px;
   }
 }
 
@@ -748,9 +762,14 @@ main {
   display: none;
 }
 
+@media (min-width: 768px) {
+  .box:hover > .contenu_competences {
+    margin-top: -50%;
+  }
+}
+
 .box:hover > .contenu_competences {
   display: block;
-  margin-top: -50%;
   padding: 1rem;
 }
 

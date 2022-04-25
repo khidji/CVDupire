@@ -1,4 +1,5 @@
 // BURGER MENU 
+// Quand l'utilisateur est sur téléphone, menu "hamburger"
 
 const burgerElement = document.querySelector('.burger');
 
@@ -12,17 +13,14 @@ burgerElement.addEventListener('click', () => {
 });
 
 // HEADER (STICKY CLASS)
+// fonction quand la fenêtre arrive au niveau du menu, celui ci prend la class sticky
 
-// When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
 
-// Get the header
 var header = document.getElementById("menu");
 
-// Get the offset position of the navbar
 var sticky = header.offsetTop;
 
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
