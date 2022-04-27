@@ -126,7 +126,7 @@ body {
 
 
 // ===================================================================================
-// ===================   MENU BANDEAU ET HAMBURGER MENU  =============================
+// ===================   MENU BANDEAU  =============================
 // ===================================================================================
 
 //pour javascript : la classe s'applique quand on scroll
@@ -168,7 +168,7 @@ body {
     }
   }
 
-  // mise en page de la liste sur les plus grands écrans et utilisation d'une formule de la page valeurs (flex)
+  // mise en page de la liste sur les grands écrans et utilisation d'une formule de la page _valeurs.scss (flex)
   ul {
     @include flex(center, center, column nowrap);
     gap: 3rem;
@@ -179,32 +179,7 @@ body {
   }
 }
 
-// mise en page de la liste quand elle est cachée et visible
-.menu-liste {
-  display: flex;
-  // on la "cache" quand le menu est fermé
-  opacity: 0;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 5rem;
-  transition: all 250ms ease-in;
-  padding: 1rem;
-  transform: translate(100%);
 
-  // au clique on lui applique la classe .visible qui fait apparaitre la liste en haut de l'écran
-  &.visible {
-    opacity: 1;
-    transform: translate(0);
-    background-color: $couleur1;
-  }
-
-  @include md {
-    transform: translate(0);
-    opacity: 1;
-    position: static;
-  }
-}
 
 .menu-liste a {
   color: $couleur3;
@@ -215,63 +190,6 @@ body {
   color: $couleur2;
 }
 
-// mise en page du burger menu (trois barres)
-.burger {
-  @include flex(center, space-between, column nowrap);
-  height: 2rem;
-  width: 3rem;
-  cursor: pointer;
-  // transition: all 750ms ease-in;
-
-  @include md {
-    display: none;
-  }
-
-  // ----------------------- ANIMATION BOUTON BURGER -------------------
-
-  // Les batons se transforment en croix en moins d'une seconde mais tranquillement
-  div {
-    border-radius: 50px;
-    height: 14%;
-    width: 100%;
-    background-color: $couleur3;
-    transition: all 750ms ease-in;
-
-    &:nth-child(2) {
-      animation: appear 750ms forwards ease-in-out;
-    }
-  }
-
-  &.close {
-    div {
-      &:nth-child(1) {
-        animation: k2 1s forwards ease-in-out;
-      }
-
-      &:nth-child(3) {
-        animation: k2b 1s forwards ease-in-out;
-      }
-    }
-  }
-
-  &.open {
-    // transform: rotate(360deg); sert à rien ici
-    div {
-      &:nth-child(1) {
-        animation: k1 1s forwards ease-in-out;
-      }
-
-      &:nth-child(2) {
-        opacity: 0;
-        animation: disappear 1s forwards ease-in-out;
-      }
-
-      &:nth-child(3) {
-        animation: k1b 1s forwards ease-in-out;
-      }
-    }
-  }
-}
 
 // =======================================================================
 // ===================== BANDEAU GAUCHE ==================================

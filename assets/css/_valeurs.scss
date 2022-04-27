@@ -1,18 +1,16 @@
 //COULEURS
 $couleur15: hsla(60, 15%, 88%, 0.635); //backgroundgradient
 $couleur1: #F8F0EC; //backgroundheader
-$couleur2: #AA7975; //contact
-$couleur3: #333231; //titres
-$couleur4 : #E0D8D6; //background
-$black: #34435E;
-$white: #ffffff;
+$couleur2: #AA7975; // couleur ppale
+$couleur3: #333231; //texte
+$couleur4 : #E0D8D6; //background + clair
+$black: #34435E; //pour texte
+$white: #ffffff; //pour les boutons
 
 // POLICES
 $policetitre: ('Special Elite', cursive);
 $policetexte: ('Nanum Gothic', sans-serif);
-$policetitre1: ('Uchen', serif);
 $police1: ('Poppins', sans-serif);
-$police2: ('Lato', sans-serif);
 
 // DIFFERENTES TAILLES D'ECRAN
 // Small tablets and large smartphones (landscape view)
@@ -42,6 +40,8 @@ $screen-xxl-min: 1800px;
     @content;
   }
 }
+
+//fonction pour le flex. Je ne l'ai pas utilisé à chaque fois mais quand j'y pense ça va plus vite
 
 @mixin flex($align: stretch, $justify: flex-start, $flex-flow: row nowrap) {
   display: flex;
