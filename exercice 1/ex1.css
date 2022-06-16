@@ -5,6 +5,7 @@
 h1 {
     background-color: rgb(240, 240, 240);   
     text-align: center;
+    padding: .5rem;
 }
 
 .conteneur_haut {
@@ -13,6 +14,7 @@ h1 {
 
 p {
     line-height: 35px;
+    font-size: 17px;
 }
 
 /* ======================
@@ -25,7 +27,7 @@ p {
     background-color: #d4d4d4;
     margin-right: 1rem;
     padding: .5rem;
-    width: 25%;
+    width: 30%;
     border-top: 1px solid ;
     border-left: 1px solid;
     border-bottom: 1px solid;
@@ -38,13 +40,18 @@ p {
     border-left: 1px solid;
 }
 
+.p_gauche {
+    margin-top: 3rem;
+}
 
 
 .p_gauche::first-letter {
     float: left;
-    font-size: 4rem;
+    font-size: 7rem;
     font-weight: bold;
     padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
 }
 
 /* ======================
@@ -54,7 +61,8 @@ p {
 .div_milieu {
     padding: 1rem;
     background-color: rgb(190, 190, 190);
-    border: 1.5px dashed black;
+    border: 2px dashed black;
+    height: fit-content;
 }
 
 .div_milieu_haut {
@@ -66,6 +74,11 @@ p {
     width: 50%;
     margin-left: 50%;
     transform: translate(-50%);
+    border-bottom: 1px solid ;
+}
+
+.p_milieu_haut {
+    padding: .5rem;
 }
 
 .div_milieu_bas {
@@ -84,13 +97,15 @@ p {
 
 .p_milieu_bas {
     clear: right;
-    margin: 0 auto;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 3rem;
     padding: .5rem;
     width: 66%;
     text-align: justify;
     border-left: solid;
     border-right: solid;
-    /*pb marge bottom*/
+    line-height: 35px;
 }
 
 /* ======================
@@ -103,6 +118,16 @@ p {
     margin-left: 1rem;
     margin-top: 1rem;
     width: 25%;
+    height: fit-content;
+    border-top: solid 2px;
+    border-right: solid 2px;
+    border-bottom: solid 2px;
+}
+
+.h1_droite {
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+
 }
 
 .p_droite {
