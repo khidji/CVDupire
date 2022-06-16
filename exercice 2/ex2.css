@@ -1,0 +1,51 @@
+html {
+    padding: 5rem;
+    background-color: #C3CBD6;
+    overflow-x: hidden;
+}
+
+h1 {
+    text-align: center;
+    color: #D05663;
+}
+
+p {
+    color: #2A403D;
+    text-align: justify;
+}
+
+ul {
+    color: #2A403D;
+}
+
+a {
+    color: #748B6F;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1e4b14;
+}
+
+.liens {
+    margin-top: 3rem;
+    display: flex;
+    text-align: center;
+}
+
+.titre_rapport {
+    padding-bottom: 5rem;
+}
+
+.image_accueil {
+    width: 80vw;
+    border-radius: 1rem;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 4rem;
+}
+
+.retour_accueil {
+    margin-top: 2rem;
+    
+}

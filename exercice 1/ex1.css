@@ -1,0 +1,15 @@
+div {
+}
+
+.conteneur_haut {
+    border: solid 1px slateblue;
+    display: flex;
+}
+
+.div_bas {
+    position: absolute;
+    bottom: 0;    
+    margin-bottom: 1rem;
+    
+    border: solid 1px green;
+}
