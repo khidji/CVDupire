@@ -5,20 +5,29 @@ html {
 }
 
 h1 {
+    font-family: 'Joan', serif;
     text-align: center;
     color: #D05663;
+    width: 60%;
+    margin: 0 auto;
 }
 
 p {
     color: #2A403D;
     text-align: justify;
+    line-height: 1.8rem;
 }
 
 ul {
     color: #2A403D;
+    line-height: 1.8rem;
 }
 
 a {
+    background-color: #bbc0c7;
+    margin: 1rem;
+    border-radius: .5rem;
+    padding: 1rem;
     color: #748B6F;
     text-decoration: none;
 }
@@ -38,14 +47,22 @@ a:hover {
 }
 
 .image_accueil {
-    width: 80vw;
+    height: 60vh;
     border-radius: 1rem;
     margin-left: 50%;
     transform: translate(-50%);
     margin-bottom: 4rem;
 }
 
-.retour_accueil {
-    margin-top: 2rem;
-    
+h2 {
+    color: #D05663;
 }
+
+h3 {
+    color: #d48a92;
+}
+
+h4 {
+    text-decoration: underline;
+}
+
